@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/mubbashir10/m10-blockchain.git"
   },
   "author": "Mubbashir10",
   "license": "ISC",
   "bugs": {
     "url": ""
   },
-  "homepage": "",
+  "homepage": "https://mubbashir10.com/projects/m10-blockchain",
   "keywords": [
     "blockchain",
     "visualization",
