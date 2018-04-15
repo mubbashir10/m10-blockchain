@@ -1,0 +1,20 @@
+body{
+  width:100%;
+  height: 100%;
+  background: #222;
+
+}
+#graph{
+  width:100%;
+  height: 1000px;
+  margin:20px auto;
+}
+canvas{
+  min-height:900px;
+  height: 900px;
+  max-height: 900px;
+  width: 100%;
+}
+.dump{
+  display: none;
+}
