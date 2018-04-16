@@ -70,13 +70,13 @@ blkchainSocket.onmessage = function(event) {
 
 
   //transaction
-  $('.dump').append('Transaction Hash: '+JSON.stringify(txData.x.hash)+'<br>');
+  $('.dump').append('<strong>Transaction Hash: </strong>'+JSON.stringify(txData.x.hash)+'<br>');
   // $('span.tx').html(JSON.stringify(txData.x.hash));
   graph.addNode(JSON.stringify(txData.x.hash), 't');
 
   //inputs
   for(var i = 0; i < inputs.length; i++){
-    $('.dump').append('Input Address: '+JSON.stringify(inputs[i].prev_out.addr)+'<br>');
+    $('.dump').append('<strong>Input Address: </strong>'+JSON.stringify(inputs[i].prev_out.addr)+'<br>');
     // $('span.i').html(JSON.stringify(inputs[i].prev_out.addr));
     graph.addNode(JSON.stringify(inputs[i].prev_out.addr), 'i');  
     graph.addLink(JSON.stringify(txData.x.hash), JSON.stringify(inputs[i].prev_out.addr));
@@ -87,14 +87,16 @@ blkchainSocket.onmessage = function(event) {
 
   //outputs
   for(var i = 0; i < outputs.length; i++){
-    $('.dump').append('Output Address: '+JSON.stringify(outputs[i].addr)+'<br>'); 
+    $('.dump').append('<strong>Output Address: </strong>'+JSON.stringify(outputs[i].addr)+'<br>'); 
     // $('span.o').html(JSON.stringify(outputs[i].addr)); 
     graph.addNode(JSON.stringify(outputs[i].addr), 'o');
     graph.addLink(JSON.stringify(txData.x.hash), JSON.stringify(outputs[i].addr));
 
 
   }
-  
+
+  $('.dump').append('<hr><br>');
+
   //limit transaction
   // if(count==10)
   //   blkchainSocket.close(); 
@@ -104,7 +106,7 @@ blkchainSocket.onmessage = function(event) {
 //mouse listener
 var events = Viva.Graph.webglInputEvents(graphics, graph);
 events.click(function (node) {
-    console.log('Single click on node: ' + node.id);
+    $('.details .data').html(node.id);
 });
 
 //run renderer
@@ -117,7 +119,6 @@ $( document ).ready(function() {
   });
   renderer.run();
 });
-
 
 
 //key bindings
@@ -141,10 +142,15 @@ $(window).keypress(function (e) {
     }
   }
 
-
   //dump data
-  if (e.key === ' ' || e.key === 'Spacebar') {
-    window.location.reload();
-  }
+  // if (e.key === 's') {
+  //   let dump = $('.dump').html();
+  //   // data = 'da'
+  //   $.post('http://localhost/dump.php', { data: dump})
+  //   .done(function( data ) {
+  //     alert( "Dumped Successfully! ");
+  //   });
+
+  // }
 
 });
