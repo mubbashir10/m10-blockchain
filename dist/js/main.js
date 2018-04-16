@@ -143,14 +143,14 @@ $(window).keypress(function (e) {
   }
 
   //dump data
-  // if (e.key === 's') {
-  //   let dump = $('.dump').html();
-  //   // data = 'da'
-  //   $.post('http://localhost/dump.php', { data: dump})
-  //   .done(function( data ) {
-  //     alert( "Dumped Successfully! ");
-  //   });
+  if (e.key === 's') {
+    let dump = $('.dump').html();
+    // data = 'da'
+    $.post('controllers/dump.php', { data: dump})
+    .done(function( data ) {
+      alert( "Dumped Successfully! ");
+    });
 
-  // }
+  }
 
 });
