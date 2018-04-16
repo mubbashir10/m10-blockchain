@@ -1,0 +1,30 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+html {
+  font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
+}
+body{
+	@include full();
+	background: $light;
+	padding: 0px;
+}
+canvas{
+	@include wh(100%, 900px);
+}
+#graph{
+	@include wh(100%, 820px);	
+}
+.legends{
+	@include wh(100%, 100px);
+	position: absolute;
+	left:0px;
+	bottom:0px;
+	padding:0px 30px;
+}
+.data li{
+	@include list(left); 
+}
+.dump { 
+	@include dp(); 
+}
+
