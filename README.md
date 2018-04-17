@@ -20,7 +20,7 @@ A simple blockchain visualization based upon WebGL, WebSockets and VivaGraph JS.
 <p>to use gulp/sass, cd into project directory<br>
 <code>npm install</code></p>
 
-<br><br>
+
 <a href="https://mubbashir10.com/projects/m10-blockchain/">Live Demo</a>
 
 
