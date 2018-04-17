@@ -1,6 +1,6 @@
 ﻿<?php
 	
- $filename = "dump.html";
+ $filename = "../dump.html";
    $file = fopen( $filename, "a" );
    
    if( $file == false ) {
