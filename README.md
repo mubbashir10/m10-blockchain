@@ -13,12 +13,12 @@ A simple blockchain visualization based upon WebGL, WebSockets and VivaGraph JS.
 <p>space = reload data</p>
 
 <h3>Notes</h3>
-<p>clone the repo using </p>
-<code>git clone https://github.com/mubbashir10/m10-blockchain.git</code>
+<p>clone the repo using<br>
+<code>git clone https://github.com/mubbashir10/m10-blockchain.git</code></p>
 
 
-<p>to use gulp/sass, cd into project directory</p>
-<code>npm install</code>
+<p>to use gulp/sass, cd into project directory<br>
+<code>npm install</code></p>
 
 <br><br>
 <a href="https://mubbashir10.com/projects/m10-blockchain/">Live Demo</a>
