@@ -16,7 +16,7 @@ A simple blockchain visualization based upon WebGL, WebSockets and VivaGraph JS.
 <p>clone the repo using </p>
 <code>git clone https://github.com/mubbashir10/m10-blockchain.git</code>
 
-<br><br>
+
 <p>to use gulp/sass, cd into project directory</p>
 <code>npm install</code>
 
