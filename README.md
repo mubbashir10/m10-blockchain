@@ -9,7 +9,7 @@ A simple blockchain visualization based upon WebGL, WebSockets and VivaGraph JS.
 
 <h3>Keys</h3>
 <p>p = pause/resume animation</p>
-<p>s = save dump to html file (<a href="https://mubbashir10.com/projects/m10-blockchain/dump.html">stored here</a>)</p>
+<p>s = save dump to html file 
 <p>space = reload data</p>
 
 <h3>Notes</h3>
